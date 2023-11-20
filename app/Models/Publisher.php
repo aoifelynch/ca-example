@@ -10,6 +10,6 @@ class Publisher extends Model
     use HasFactory;
 
     public function books() {
-        return hasMany(Book::class);
+        return $this->hasMany(Book::class);
     }
 }
