@@ -33,7 +33,7 @@
                             @forelse($publishers as $publisher)
                             <tr class="bg-white border-b dark:bg-gray-900 dark:border-gray-700">
                                 <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                    {{ $publisher->title }}
+                                    {{ $publisher->name }}
                                 </th>
                                 <td class="px-6 py-4">
                                     {{ $publisher->description }}
@@ -45,7 +45,7 @@
                                     {{ $publisher->phone }}
                                 </td>
                                 <td class="px-6 py-4">
-                                    <a href="{{ route('publisher.show', $publisher->id) }}" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                                    <a href="{{ route('publishers.show', $publisher->id) }}" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">View</a>
                                 </td>
                             </tr>
                             @empty
