@@ -19,8 +19,8 @@ class UserSeeder extends Seeder
 
         $admin = new User;
         $admin->name = "Aoife Lynch";
-        $admin->email = "aoife@outlook.com";
-        $admin->password = "louise108";
+        $admin->email = "aoifellynch@outlook.com";
+        $admin->password = "password";
         $admin->save();
 
         // attach admin role to the user created above
